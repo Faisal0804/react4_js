@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+    </script>
+</head>
+<body>
+    <p id="demo">hello something </p>
+    <button type="submit" onclick="document.getElementById('demo').innerHTML='hello world';">click me</button>
+
+    <img style="width:200px" id="myImage" src="before.jpeg" alt="">
+  <button onclick="document.getElementById('myImage').src='after.jpeg'">before</button>
+  <p id="demo1">JavaScript can change the style of an HTML element.</p>
+  <button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button>
+  
+    <button type="submit" onclick="myFunction()">hello</button>
+    <script src="1.js"></script>
+</body>
+</html>
