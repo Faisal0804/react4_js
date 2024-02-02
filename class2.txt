@@ -1,0 +1,93 @@
+Statements-->
+
+
+Values, Operators, Expressions, Keywords, and Comments.
+
+let x, y, z;    // Statement 1
+x = 7;          // Statement 2
+y = 5;          // Statement 3
+z = x + y;      // Statement 4
+
+
+example
+
+ let x, y, z; 
+            x = 7;     
+            y =5;       
+            z = x + y;   
+
+            document.getElementById("demo").innerHTML =
+            "The value of z is " + z + "."; 
+
+
+
+Semicolons ;-->
+
+let a, b, c;
+a = 7;
+b = 5;
+c = a + b;
+document.getElementById("demo1").innerHTML = c;
+
+JavaScript Code Blocks-->
+
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Hello Dolly!";
+  document.getElementById("demo2").innerHTML = "How are you?";
+}
+
+
+Syntax--->
+
+var x;
+let y;
+
+
+JavaScript Operators
+
+JavaScript uses arithmetic operators ( + - * / ) to compute values:
+
+<script>
+document.getElementById("demo").innerHTML = (5 + 7) * 10;
+</script>
+
+JavaScript uses an assignment operator ( = ) to assign values to variables:
+
+<script>
+let x, y;
+x = 5;
+y = 6;
+document.getElementById("demo").innerHTML = x + y;
+</script>
+
+Expressions-->
+combination of values, variables, and operators
+<script>
+document.getElementById("demo").innerHTML = 3 * 10;
+</script>
+
+
+<script>
+var x;
+x = 5;
+document.getElementById("demo").innerHTML = x * 10;
+</script>
+
+<script>
+document.getElementById("demo").innerHTML = "Faisal" + " "  + "mohammed";
+</script>
+
+Keywords
+
+let,var,cons;
+
+
+
+
+
+
+
+
+
+
+ 

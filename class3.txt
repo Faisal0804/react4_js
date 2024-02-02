@@ -1,0 +1,52 @@
+Declare a JavaScript Variable-->
+
+ var
+ let
+ const
+
+Variables?-->
+
+
+var x = 5;
+var y = 8;
+var z = x + y;
+console.log(z);
+
+
+let x = 5;
+let y = 8;
+let z = x + y;
+console.log(z);
+
+
+x = 5;
+y = 8;
+z = x + y;
+
+console.log(z);
+
+
+const pri1 = 5;
+const pri2 = 6;8
+let total = pri1 + pri2;
+console.log(total);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
