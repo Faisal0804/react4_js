@@ -1,0 +1,200 @@
+Declare a JavaScript Variable-->
+
+ var
+ let
+ const
+
+Variables?-->
+
+
+var x = 5;
+var y = 8;
+var z = x + y;
+console.log(z);
+
+
+let x = 5;
+let y = 8;
+let z = x + y;
+console.log(z);
+
+
+x = 5;
+y = 8;
+z = x + y;
+
+console.log(z);
+
+
+const pri1 = 5;
+const pri2 = 6;8
+let total = pri1 + pri2;
+
+
+
+let-->
+
+Cannot be Redeclared
+
+let x = "Neep";
+
+let x = 0;
+
+console.log(x);
+
+
+
+Block Scope-->
+
+var  x = 10;
+
+
+{  
+var x = 2;
+
+}
+console.log(x);
+
+
+
+
+let  x = 10;
+ console.log(x);
+
+{  
+  let x = 2;
+  console.log(x);
+
+}
+
+
+Redeclaring-->
+
+var x = 13;  
+let x = 24;  
+
+console.log(x);
+
+
+
+{
+let x = 2;  //allow 
+let x = 3;   // not allow 
+}
+console.log(x);
+
+
+{
+let x = 13;  
+var x = 24;   
+}
+console.log(x);
+
+
+
+
+let x = 13;   // Allowed
+
+{
+let x = 1;   // Allowed
+
+}
+
+{
+let x = 8;    // Allowedy
+
+}
+
+
+Let Hoisting-->
+
+
+stName = "neep";
+var stName;
+console.log(stName);
+
+
+stName = "neep";
+let stName;
+console.log(stName);
+
+
+
+Const-->
+
+Cannot be Reassigned-->
+
+  const PI = 3.14;
+  PI = 3.14;
+  console.log(PI);
+
+
+const PI = 3.14159265359;
+let r=2;
+let z=PI*r*r;
+console.log(z);
+
+
+Must be Assigned-->
+
+
+
+Constant Arrays-->
+
+const cars = ["toyota", "audi", "corrola"];
+console.log(cars) ;
+
+
+
+const cars = ["toyota", "audi", "corrola"];
+cars[0] = "Bmw";
+cars.push("Volvo");
+
+console.log(cars) ;
+
+
+Constant Objects-->
+
+
+const car = {type:"Fiat", model:"500", color:"Black"};
+
+
+-->
+
+
+
+const car = {type:"Fiat", model:"500", color:"Black"};
+
+
+car.color = "coffee";
+
+
+
+-->
+
+
+const car = {type:"Fiat", model:"500", color:"Black"};
+
+
+car.color = "coffee";
+
+
+car.owner = "Faisal";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
