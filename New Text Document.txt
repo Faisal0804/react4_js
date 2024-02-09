@@ -1,0 +1,143 @@
+Functions-->
+
+
+function name(parameter1, parameter2, parameter3) {
+
+  // code to be executed
+}
+
+
+
+function myFunction(x,y) {
+  return x * y;
+}
+
+
+function myFunction(x,y) {
+  return x * y;
+}
+let z=myFunction(3,4);
+console.log(z);
+
+
+Function Return-->
+
+
+function myFunction(a, b) {
+  return a * b;
+
+  
+}
+let x = myFunction(4, 3);
+console.log(x);
+
+
+but not excuted-->
+
+function myFunction(a, b) {
+  return a * b;
+console.log(5);
+  
+}
+let x = myFunction(4, 3);
+console.log(x);
+
+The () Operator-->
+
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+
+let value = toCelsius(100);
+console.log(value);
+
+
+types of function-->
+
+1.Named function
+2.Anonymous function
+3.Immediately invoked function expression. It runs as soon as the browser finds it.
+
+
+Named function-->
+
+function oddOreven(number) {
+    if(number%2==0){
+        return "Number is even";
+    }else{
+         return "Number is odd";
+    }
+ 
+}
+let x= oddOreven(13);
+console.log(x);
+
+
+2.Anonymous function-->
+
+let show = function() {
+    console.log('Anonymous function');
+};
+
+show();
+
+
+
+ let oddOreven= function(number) {
+    if(number%2==0){
+        console.log("even");
+    }else{
+          console.log("odd");
+    }
+ 
+}
+ oddOreven(13);
+
+
+3.Immediately invoked function expression. It runs as soon as the browser finds it.
+
+ let message= (function() {
+    let name="neep";
+    return name;
+})();
+console.log(message);
+
+
+
+objects-->
+
+
+const car = {type:"Fiat", model:"500", color:"white"};
+console.log(car);
+
+
+
+const person = {
+  firstName: "nader",
+  lastName: "neep",
+  age: 23,
+  eyeColor: "black"
+};
+
+console.log(person);
+
+
+const person = {
+  firstName: "nader",
+  lastName: "neep",
+  age: 23,
+  eyeColor: "black"
+};
+
+console.log(person.age);
+
+
+const person = {
+  firstName: "nader",
+  lastName: "neep",
+  age: 23,
+  eyeColor: "black"
+};
+
+console.log(person['lastName']);
+
