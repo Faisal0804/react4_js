@@ -1,0 +1,106 @@
+JavaScript Object Constructors-->
+-->
+
+function User (fname,lastName, age) {
+    this.fname = fname;
+    this.lname= lastName;
+    this.age = age;
+}
+
+var neep = new User('nader','nihal', 25);
+console.log(neep);
+
+
+
+
+
+-->
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.fullname= function(){
+      return this.firstName + ' ' + this.lastName
+  }
+}
+
+// Create a Person object
+const neep = new Person("nihal", "neep", 23);
+console.log(neep);
+console.log(neep.fullname());
+
+
+avaScript Object Prototype-->
+
+All JavaScript objects inherit properties and methods from a prototype.
+
+
+function Person(first, last, age) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+
+}
+
+// Create a Person object
+const neep = new Person("nihal", "neep", 23);
+
+Person.prototype.country="sylhet"
+
+console.log(neep.country);
+
+
+Class Inheritance-->
+
+To create a class inheritance, use the extends keyword.-->
+
+// parent class
+class Person { 
+    constructor(name) {
+        this.name = name;
+    }
+    greet() {
+        console.log(`Hello ${this.name}`);
+    }
+   
+}
+
+// inheriting parent class
+class Student extends Person {
+  
+}
+
+let student1 = new Student('neep');
+student1.greet();
+
+
+
+JavaScript super() keyword-->
+
+// parent class
+class Person { 
+    constructor(name) {
+        this.name = name;
+    }
+
+    greet() {
+        console.log(`Hello ${this.name}`);
+    }
+}
+
+// inheriting parent class
+class Student extends Person {
+
+    constructor(name) {
+    
+        console.log("Creating student class");
+        
+        // call the super class constructor and pass in the name parameter
+        super(name);
+    }
+
+}
+
+let student1 = new Student('neep');
+student1.greet();
+
