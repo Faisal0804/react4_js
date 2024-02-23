@@ -1,0 +1,298 @@
+JSON-->
+
+
+JavaScript Object Notation.
+
+
+JSON is a format for storing and transporting data.
+
+JSON Arrays-->
+
+{
+"employees":[
+  {"firstName":"x", "lastName":"y"},
+  
+]
+}
+
+
+Text to a JavaScript Object-->
+
+let text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+
+const obj = JSON.parse(text);
+console.log(obj.employees[1].firstName);
+
+
+JSON.stringify()-->
+
+A common use of JSON is to exchange data to/from a web server.
+
+
+const obj = {name: "Neep", age: 23, city: "Sylhet"};
+const myJSON = JSON.stringify(obj);
+console.log(myJSON);
+
+
+
+
+debugging-->
+ class Person{
+      
+   constructor(name,age) {
+    this.Name = name;
+    this.age = age;
+
+    
+  }
+
+  }
+
+   const neep= new Person("neep");
+   const sabiha= new Person("sabiha","23");
+   console.log(neep);
+   console.log(sabiha);
+
+
+
+ class Person{
+      
+      constructor(name,age) {
+       this.Name = name;
+       this.age = age;
+   
+       
+     }
+      active(status){
+        console.log(`one ${this.Name} two ${this.age} play ${status}`);
+       
+
+      }
+   
+     }
+   
+      const neep= new Person("neep","23");
+      const sabiha= new Person("sabiha","23");
+        neep.active("well");
+        sabiha.active("well");
+
+
+
+
+c
+
+
+  <button id="myBtn">Click</button>
+
+<script>
+var x = document.getElementById("myBtn");
+x.addEventListener("click", myFunction);
+x.addEventListener("click", someOtherFunction);
+
+function myFunction() {
+  alert ("Hello World!");
+}
+
+function someOtherFunction() {
+  alert ("This function was also executed!");
+}
+</script>
+
+
+//Passing Parameters
+
+
+
+<button id="myBtn">Click</button>
+
+  <p id="demo"></p>
+  
+  <script>
+  let p1 = 5;
+  let p2 = 8;
+  document.getElementById("myBtn").addEventListener("click", function() {
+    myFunction(p1, p2);
+  });
+  
+  function myFunction(a, b) {
+    document.getElementById("demo").innerHTML = a * b;
+  }
+  </script>
+
+
+
+
+
+
+//
+With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+
+JavaScript can change all the HTML elements in the page
+JavaScript can change all the HTML attributes in the page
+JavaScript can change all the CSS styles in the page
+JavaScript can remove existing HTML elements and attributes
+JavaScript can add new HTML elements and attributes
+JavaScript can react to all existing HTML events in the page
+JavaScript can create new HTML events in the page
+
+//
+
+element.innerHTML =  new html           content	Change the inner HTML of an element
+element.attribute = new value	        Change the attribute value of an HTML element
+element.style.property = new style	Change the style of an HTML element
+
+
+
+//
+
+getElementById() – select an element by id.
+getElementsByName() – select elements by name.
+getElementsByTagName()  – select elements by a tag name.
+getElementsByClassName() – select elements by one or more class names.
+querySelector()  – select elements by CSS selectors.
+
+
+//
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+</script>
+
+
+
+//
+DOM Elements-->
+
+
+
+  <p id="intro"></p>
+
+<script>
+
+const element = document.getElementById("intro");
+     element.innerHTML="hello";
+</script>
+
+HTML Elements by Tag Name-->
+
+ <p >hello</p>
+  <p >hey</p>
+  <p >ok</p>
+
+  <script>
+    const elements =document.getElementsByTagName("p");
+    elements[0].innerHTML="hello";
+ 
+ 
+  
+  </script>
+
+
+<ul>
+
+    <li>1</li>
+    <li>2</li>
+  </ul>
+
+ <script>
+    const elements =document.getElementsByTagName("li");
+    elements[0].innerHTML="hello";
+ 
+ 
+  
+  </script>
+
+
+
+DOM HTML-->
+
+document.getElementById(id).attribute = new value -->
+
+<img id="myImage" src="smiley.gif">
+
+<script>
+document.getElementById("myImage").src = "landscape.jpg";
+</script>
+
+
+
+
+DOM Form-->
+
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fname"><br>
+    lastName: <input type="text" name="lastname">
+    <input type="submit" value="Submit">
+  </form>
+
+
+
+  <script src="main.js">
+  </script>
+
+
+function validateForm() {
+    let x = document.forms["myForm"]["fname"].value;
+    let y = document.forms["myForm"]["lastname"].value;
+    if (x == "" || y=="") {
+      alert("Name must be filled out");
+      return false;
+     
+    }
+  }
+  
+
+Changing HTML Style-->
+
+
+document.getElementById(id).style.property = new style
+
+//
+
+<p id="p2">Hello World!</p>
+
+  <script>
+    document.getElementById("p2").style.color = "blue";
+    document.getElementById("p2").style.fontSize = "30px";
+    </script>
+
+//
+
+ <h1 id="id1" onmousemove="styleChange()">My Heading 1</h1>
+
+<script>
+   function styleChange(){
+    document.querySelector('#id1').style.color = 'blue';
+   }
+
+
+//
+
+<h1 class="head" onmouseover="styleChangeclass()">My Heading 2</h1>
+
+   function styleChangeclass(){
+    document.querySelector('.head').style.color = 'pink';
+   }
+
+
+   function styleChangeclass(){
+    document.querySelector('.head').style.color = 'pink';
+
+    setTimeout(change,2000);
+    function change(){
+      document.querySelector('.head').style.color = 'red';
+    }
+   }
+
+
+//
+
+
+
+
+
+
