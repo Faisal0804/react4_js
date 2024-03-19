@@ -9,6 +9,8 @@ import SetState from './SetState';
 import SingleFormHandle from './SingleFormHandle';
 import NameSingleFormHandle from './NameSingleFormHandle';
 import MultipleFormHandle from './MultipleFormHandle';
+import BasicHook from './BasicHook';
+import ImagesHook from './ImagesHook';
 
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
   return (
     <>
   
-     <MultipleFormHandle/>
+      <ImagesHook/>
     </>
   )
 }
