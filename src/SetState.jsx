@@ -8,6 +8,7 @@ export class SetState extends Component {
           make: "Yamaha",   
           model: "MT15",   
           color: "Gray"   
+       
 
         };
 

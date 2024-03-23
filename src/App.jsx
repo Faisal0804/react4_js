@@ -11,6 +11,8 @@ import NameSingleFormHandle from './NameSingleFormHandle';
 import MultipleFormHandle from './MultipleFormHandle';
 import BasicHook from './BasicHook';
 import ImagesHook from './ImagesHook';
+import EffectHook from './EffectHook';
+import Validation from './Validation';
 
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
   return (
     <>
   
-      <ImagesHook/>
+       <Validation/>
     </>
   )
 }
