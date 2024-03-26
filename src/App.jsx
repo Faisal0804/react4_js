@@ -13,6 +13,8 @@ import BasicHook from './BasicHook';
 import ImagesHook from './ImagesHook';
 import EffectHook from './EffectHook';
 import Validation from './Validation';
+import AxoisApi from './AxoisApi';
+import SingleDataApi from './SingleDataApi';
 
 
 function App() {
@@ -21,7 +23,7 @@ function App() {
   return (
     <>
   
-       <Validation/>
+        <SingleDataApi/>
     </>
   )
 }
